@@ -4,7 +4,7 @@
   "description": "RhinoFi backend live exercise",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "jest index.test.js"
   },
   "keywords": [
     "live",
