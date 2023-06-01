@@ -1,0 +1,19 @@
+{
+  "name": "backend_test",
+  "version": "1.0.0",
+  "description": "RhinoFi backend live exercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "live",
+    "rhinofi"
+  ],
+  "author": "RhinoFi",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^29.5.0",
+    "ramda": "^0.29.0"
+  }
+}
