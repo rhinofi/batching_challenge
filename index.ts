@@ -7,8 +7,6 @@
       ensure the logic can handle such a case
 */
 
-const fs = require('fs')
-
 const SIZE_MAPPING = {
   A: 4,
   B: 5,
@@ -19,9 +17,8 @@ const SIZE_MAPPING = {
 
 /**
  * Batch the records by ids depending on the maxSize
- * @type {(filename: string, maxSize: number) => number[][]}
  */
-module.exports = (filename, maxSize) => {
+export default (filename: string, maxSize: number): number[][] => {
 
   // read and parse the csv file
   // group the records sequentially into lists that fit within

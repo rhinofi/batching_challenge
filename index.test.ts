@@ -1,5 +1,5 @@
-const batchRecords = require('.')
-// const batchRecords = require('./solution')
+import { describe, it, expect } from '@jest/globals'
+import batchRecords from '.'
 
 describe('CSV file reader can batch records', () => {
   it('Correctly batches the given file', async () => {
@@ -7,7 +7,7 @@ describe('CSV file reader can batch records', () => {
 
     const batches = batchRecords(testFilename, 30)
 
-    expect(batches).toMatchObject([
+    expect(batches).toEqual([
       [0, 1],
       [2],
       [3],
@@ -18,8 +18,6 @@ describe('CSV file reader can batch records', () => {
   })
 
   it('If max size is too low to fit any element, exception is thrown', async () => {
-    const testFilename = 'records.test.csv'   
-
-    expect(() => batchRecords(testFilename, 5)).toThrow(Error)
+    throw new Error('NOT IMPLEMENTED')
   })
 })
