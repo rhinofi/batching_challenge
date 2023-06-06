@@ -9,7 +9,7 @@ The goal of this exercise is as follows:
 
 ## Example
 ```
-MAX_SIZE = 30
+maxSize = 30
 SIZE_MAPPINGS = {
   A: 4,
   B: 5,
@@ -17,12 +17,12 @@ SIZE_MAPPINGS = {
   D: 7,
 }
 
-CSV
+// CSV
 0,D:D:C     --> value = 20
 1,B:B       --> value = 10
 2,D:D:B:B   --> value = 24
 
-Expected result
+// Expected result
 [
   [0, 1],
   [2],
